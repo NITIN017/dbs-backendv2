@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Player</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+  <a href="iplauction.html">HOME</a>
+<section class="playerdetails">
+  <div class="input">
+      <h2>Enter Player Details</h2>
+
+      <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+    <legend>------------------------</legend>
+    <div class="form">
+      <input type="text" name="text" autocomplete="off" required />
+      <label for="text" class="label-name">
+        <span class="content-name">
+        Player Name:
+        </span>
+      </label>
+    </div>
+              
+
+    <div class="form">
+      <input type="text" name="text" autocomplete="off" required />
+      <label for="text" class="label-name">
+        <span class="content-name">
+        Country:
+        </span>
+      </label>
+    </div>
+
+    <div class="form">
+      <input type="number" name="number" autocomplete="off" required />
+      <label for="number" class="label-name">
+        <span class="content-name">
+        Jersey No.:
+        </span>
+      </label>
+    </div>
+
+    <div class="form">
+      <input type="number" name="number" autocomplete="off" required />
+      <label for="number" class="label-name">
+        <span class="content-name">
+        Bid(in Cr):
+        </span>
+      </label>
+    </div>					
+      
+    <br><br><br>
+
+      <label for="team">Team Name:</label>
+      <select name="team" id="team">
+      <option value="unsold">UNSOLD</option>
+      <option value="srh">Sunrisers</option>
+      <option value="rcb">Royalchallengers</option>
+      <option value="csk">Superkings</option>
+      <option value="mi">MumIndians</option>
+      <option value="lsg">Supergiants</option>
+      <option value="kkr">Knightriders</option>
+      <option value="pbks">PbKings</option>
+      <option value="dc">Capitals</option>
+      <option value="gt">Titans</option>
+      <option value="csk">Superkings</option>
+      <option value="rr">Royals</option>
+      </select>
+
+      <br><br><br>
+
+    <dl>
+      <label for="role">Role:</label>
+      <dt>
+        <p>
+          <input type="checkbox" name="role" id="role" value="hisrole">
+          <label for="bat">Batsman</label>
+        </p>
+      </dt>
+
+      <dt>
+        <p>
+          <input type="checkbox" name="role" id="role" value="hisrole">
+          <label for="keep">Keeper</label>
+        </p>
+      </dt>
+
+      <dt>
+        <p>
+          <input type="checkbox" name="role" id="role" value="hisrole">
+          <label for="bowl">Pace Bowler</label>
+        </p>
+      </dt>
+
+      <dt>
+        <p>
+          <input type="checkbox" name="role" id="role" value="hisrole">
+          <label for="spin">Spinner</label>
+        </p>
+      </dt>
+
+    </dl>
+          </fieldset>
+          <br>
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+      </form>
+  </div>
+</section>
+</body>
+</html>

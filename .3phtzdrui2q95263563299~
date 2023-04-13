@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Auction Page</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="auction.css" type="text/css">
+</head>
+
+<body>
+    <section class="aboutipl">
+        <div class="container">
+             <!-- Start Header Section -->
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="header-section">
+                        <h2 class="title">Welcome to the AUCTION folks!</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Header Section -->
+            <img src="ipl.png" alt="ipllogo" height="350" width="300" class="center">
+        </div>
+        <div class="text">
+            <p>
+                In the budget of <b>100cr</b>,build a team of 18-24 players
+                <br><br>
+
+                <h3>TRIVIA</h3>
+                <aside>
+                    <details>
+                        <summary>
+                            How does it work?
+                        </summary>
+                        <p>
+                            We manually enter details of players and after being sold we add him to the respective team database.
+                        </p>
+                    </details>
+                    <details>
+                       <summary>
+                            What type of updation?
+                       </summary>
+                       <p>
+                        It is a local user database updation,not live :)
+                       </p>
+                    </details>
+                </aside>
+            </p>
+        </div>
+    </section>
+
+    <section class="playerdetails">
+        <div class="input">
+            <h2>Enter Player Details</h2>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+					<legend>------------------------</legend>
+					<div class="form">
+						<input type="text" name="text" autocomplete="off" required />
+						<label for="text" class="label-name">
+						  <span class="content-name">
+							Player Name:
+						  </span>
+						</label>
+					</div>
+                    
+
+					<div class="form">
+						<input type="text" name="text" autocomplete="off" required />
+						<label for="text" class="label-name">
+						  <span class="content-name">
+							Country:
+						  </span>
+						</label>
+					</div>
+
+					<div class="form">
+						<input type="number" name="number" autocomplete="off" required />
+						<label for="number" class="label-name">
+						  <span class="content-name">
+							Jersey No.:
+						  </span>
+						</label>
+					</div>
+
+					<div class="form">
+						<input type="number" name="number" autocomplete="off" required />
+						<label for="number" class="label-name">
+						  <span class="content-name">
+							Bid(in Cr):
+						  </span>
+						</label>
+					</div>					
+						
+					<br><br><br>
+
+						<label for="team">Team Name:</label>
+						<select name="team" id="team">
+						<option value="srh">Sunrisers</option>
+						<option value="rcb">Royalchallengers</option>
+						<option value="csk">Superkings</option>
+						<option value="mi">MumIndians</option>
+						<option value="lsg">Supergiants</option>
+						<option value="kkr">Knightriders</option>
+						<option value="pbks">PbKings</option>
+						<option value="dc">Capitals</option>
+						<option value="gt">Titans</option>
+						<option value="csk">Superkings</option>
+						<option value="rr">Royals</option>
+						</select>
+
+						<br><br><br>
+
+					<dl>
+						<label for="role">Role:</label>
+						<dt>
+							<p>
+								<input type="checkbox" name="role" id="role" value="hisrole">
+								<label for="topbat">TopOrder Batsman</label>
+							</p>
+						</dt>
+						<dt>
+							<p>
+								<input type="checkbox" name="role" id="role" value="hisrole">
+								<label for="midbat">MiddleOrder Batman</label>
+							</p>
+						</dt>
+						<dt>
+							<p>
+								<input type="checkbox" name="role" id="role" value="hisrole">
+								<label for="keeper">Keeper</label>
+							</p>
+						</dt>
+						<dt>
+							<p>
+								<input type="checkbox" name="role" id="role" value="hisrole">
+								<label for="fastbowl">Fast Bowler</label>
+							</p>
+						</dt>
+						<dt>
+							<p>
+								<input type="checkbox" name="role" id="role" value="hisrole">
+								<label for="medfastbowl">Medium Fast Bowler</label>
+							</p>
+						</dt>
+						<dt>
+							<p>
+								<input type="checkbox" name="role" id="role" value="hisrole">
+								<label for="offspin">Off Spinner</label>
+							</p>
+						</dt>
+						<dt>
+							<p>
+								<input type="checkbox" name="role" id="role" value="hisrole">
+								<label for="legspin">Leg Spinner</label>
+							</p>
+						</dt>
+					</dl>
+                </fieldset>
+                <br>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section-team">
+		<div class="container">
+            
+			<div class="row">
+				<!-- Start Single Person -->
+				<div class="col-sm-6 col-lg-4 col-xl-3">
+					<div class="single-person1">
+						<div class="person-image">
+							<img src="sunrisers.jpg" alt="sunrisers">
+							<!-- <span class="icon">
+								<i class="fab fa-html5"></i>
+							</span> -->
+                            <a href="nitinmain.html">
+                                <span class="link"></span>
+                            </a>
+						</div>
+						<div class="person-info">
+							<h3 class="full-name">HYDERABAD</h3>
+						</div>
+					</div>
+				</div>
+				<!-- / End Single Person -->
+
+                <!-- Start Single Person -->
+				<div class="col-sm-6 col-lg-4 col-xl-3">
+					<div class="single-person2">
+						<div class="person-image">
+							<img src="royalchallengers.jpg" alt="rcb">
+							<!-- <span class="icon">
+								<i class="fab fa-html5"></i>
+							</span> -->
+                            <a href="nitinmain.html">
+                                <span class="link"></span>
+                            </a>
+						</div>
+						<div class="person-info">
+							<h3 class="full-name">BENGALURU</h3>
+						</div>
+					</div>
+				</div>
+				<!-- / End Single Person -->
+
+                <!-- Start Single Person -->
+				<div class="col-sm-6 col-lg-4 col-xl-3">
+					<div class="single-person3">
+						<div class="person-image">
+							<img src="superkings.jpg" alt="csk">
+							<!-- <span class="icon">
+								<i class="fab fa-html5"></i>
+							</span> -->
+                            <a href="nitinmain.html">
+                                <span class="link"></span>
+                            </a>
+						</div>
+						<div class="person-info">
+							<h3 class="full-name">CHENNAI</h3>
+						</div>
+					</div>
+				</div>
+				<!-- / End Single Person -->
+
+                <!-- Start Single Person -->
+				<div class="col-sm-6 col-lg-4 col-xl-3">
+					<div class="single-person4">
+						<div class="person-image">
+							<img src="mumindians.jpg" alt="mi">
+							<!-- <span class="icon">
+								<i class="fab fa-html5"></i>
+							</span> -->
+                            <a href="nitinmain.html">
+                                <span class="link"></span>
+                            </a>
+						</div>
+						<div class="person-info">
+							<h3 class="full-name">MUMBAI</h3>
+						</div>
+					</div>
+				</div>
+				<!-- / End Single Person -->
+
+                <!-- Start Single Person -->
+				<div class="col-sm-6 col-lg-4 col-xl-3">
+					<div class="single-person5">
+						<div class="person-image">
+							<img src="titans.jpg" alt="gt">
+							<!-- <span class="icon">
+								<i class="fab fa-html5"></i>
+							</span> -->
+                            <a href="nitinmain.html">
+                                <span class="link"></span>
+                            </a>
+						</div>
+						<div class="person-info">
+							<h3 class="full-name">GUJRAT</h3>
+						</div>
+					</div>
+				</div>
+				<!-- / End Single Person -->
+
+                <!-- Start Single Person -->
+				<div class="col-sm-6 col-lg-4 col-xl-3">
+					<div class="single-person6">
+						<div class="person-image">
+							<img src="knightriders.jpg" alt="kkr">
+							<!-- <span class="icon">
+								<i class="fab fa-html5"></i>
+							</span> -->
+                            <a href="nitinmain.html">
+                                <span class="link"></span>
+                            </a>
+						</div>
+						<div class="person-info">
+							<h3 class="full-name">KOLKATA</h3>
+						</div>
+					</div>
+				</div>
+				<!-- / End Single Person -->
+
+                <!-- Start Single Person -->
+				<div class="col-sm-6 col-lg-4 col-xl-3">
+					<div class="single-person7">
+						<div class="person-image">
+							<img src="capitals.jpg" alt="dc">
+							<!-- <span class="icon">
+								<i class="fab fa-html5"></i>
+							</span> -->
+                            <a href="nitinmain.html">
+                                <span class="link"></span>
+                            </a>
+						</div>
+						<div class="person-info">
+							<h3 class="full-name">DELHI</h3>
+						</div>
+					</div>
+				</div>
+				<!-- / End Single Person -->
+
+				<!-- Start Single Person -->
+				<div class="col-sm-6 col-lg-4 col-xl-3">
+					<div class="single-person8">
+						<div class="person-image">
+							<img src="royals.jpg" alt="rr">
+							<!-- <span class="icon">
+								<i class="fab fa-wordpress-simple"></i>
+							</span> -->
+                            <a href="shubhan.html">
+                                <span class="link"></span>
+                            </a>
+						</div>
+						<div class="person-info">
+							<h3 class="full-name">RAJASTHAN</h3>
+						</div>
+					</div>
+				</div>
+				<!-- / End Single Person -->
+
+				<!-- Start Single Person -->
+				<div class="col-sm-6 col-lg-4 col-xl-3">
+					<div class="single-person9">
+						<div class="person-image">
+							<img src="supergiants.jpg" alt="lsg">
+							<!-- <span class="icon">
+								<i class="fab fa-angular"></i>
+							</span> -->
+                            <a href="chief.html">
+                                <span class="link"></span>
+                            </a>
+						</div>
+						<div class="person-info">
+							<h3 class="full-name">LUCKNOW</h3>
+                            <!-- <span class="speciality">Angular Developer</span> -->
+						</div>
+					</div>
+				</div>
+				<!-- / End Single Person -->
+
+				<!-- Start Single Person -->
+				<div class="col-sm-6 col-lg-4 col-xl-3">
+					<div class="single-person10">
+                        <!-- <div class="nit"> -->
+						<div class="person-image">
+							<img src="pbkings.png" alt="pbks">
+							<!-- <span class="icon">
+								<i class="fab fa-js"></i>
+							</span> -->
+                            <a href="ananya.html">
+                                <span class="link"></span>
+                            </a>
+						</div>
+						<div class="person-info">
+							<h3 class="full-name">PUNJAB</h3>
+                        </div>
+					</div>
+				</div>
+				<!-- / End Single Person -->
+			</div>
+		</div>
+	</section>
+</body>
+</html>

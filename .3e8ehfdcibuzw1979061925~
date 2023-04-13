@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" type="text/css">
+</head>
+<body>
+    <a href="iplauction.html">HOME</a>
+    <div class="container">
+        <div class="login_box">
+            <h1>Login</h1>
+            <div class="input_box">
+                <input type="text" required="">
+                <label for="">User ID</label>
+                <ion-icon class="icon " name="mail-outline"></ion-icon>
+            </div>
+            <div class="input_box">
+                <input type="password" required="">
+                <label for="">password</label>
+                <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
+            </div>
+            <div class="login">
+                <button><a href="input.html"><b><I>LOGIN</I></i></b></a> </button>
+            </div>
+        </div>
+     </div>
+
+    <div class="footer">
+        <p>
+            User ID : nitin17<br>
+            Password : password
+        </p>
+    </div>
+</body>
+</html>
